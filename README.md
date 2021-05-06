@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+<h1 align="center">
+    <a href="https://lectrum.io" target="_blank" rel="noopener noreferrer">
+        <img src="./static/favicon/favicon-woodsmoke.svg" alt="Lectrum favicon" width="25" />
+    </a>
+    Продвинутые концепции Redux Saga
+</h1>
+<br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+    <!-- Package version -->
+    <img src="https://img.shields.io/github/package-json/v/lectrum/redux-saga-advanced.svg?longCache=true&style=flat-square"
+        alt="Package version" />
+    <!-- Contributors welcome -->
+    <img src="https://img.shields.io/badge/contributions-welcome-orange.svg?longCache=true&style=flat-square" alt="Last update"
+    />
+</div>
+<div align="center">
+    <!-- Наш Facebook -->
+    <a href="https://www.facebook.com/lectrum">
+        <img src="https://img.shields.io/badge/%D0%9F%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D1%8B%D0%B2%D0%B0%D0%B9%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BD%D0%B0%D1%88-Facebook-blue.svg?longCache=true&style=for-the-badge&link=https://www.facebook.com/lectrum"
+            alt="Подписывайся на наш Facebook" />
+    </a>
+</div>
+<br>
 
-## Available Scripts
+<h3 align="center">
+    👋🏼 Привет и добро пожаловать!
+</h3>
+<p>
+    📸 Вместе мы разберёмся в продвинутых механизмах работы Redux Saga. Пристегни ремни — будет интересно!
+</p>
+<br>
+<p>
+    👨🏼‍🔬 В этой инструкции ты узнаешь как настроить и запустить проект.
+</p>
+<br>
 
-In the project directory, you can run:
+## 📜 Содержание
 
-### `yarn start`
+<img align="right" width="70" src="./static/logos/redux.png">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+-   [🚀 Инструкция по запуску проекта](#-инструкция-по-запуску-проекта)
+-   [🤔 FAQ](#-faq) <br>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 🚀 Инструкция по запуску проекта
 
-### `yarn test`
+> Список поддерживаемых нами операционных систем [можно найти здесь](https://lab.lectrum.io/faq#supported-os).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> Если ты пользователь Windows, [настрой себе терминал](https://lab.lectrum.io/faq#how-to-setup-terminal-on-windows).
 
-### `yarn build`
+1. [Скачай и установи](https://nodejs.org/en/) последнюю **`LTS-версию Node.js`**:
+2. Выполни в консоли **`node -v`** и убедись, что установленная версия **`Node.js`** не ниже **`10.16.0`**;
+3. Выполни в консоли **`npm -v`** и убедись, что установленная версия **`npm`** не ниже **`6.9.0`**;
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> ❗️ Мы поддерживаем только последние **`LTS-версии Node.js`**. Мы не даём гарантий работы на других версиях Node. Если у тебя не работает, в первую очередь проверь версию Node.js!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. [Скачай и установи Git](https://git-scm.com/downloads), если его нет на компьютере;
+5. Выполни в консоли **`git --version`**, чтобы проверить версию установленного Git, должно быть не ниже **`2.19.0`**;
+6. Склонируй этот проект:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/Lectrum/redux-saga-advanced.git
+```
 
-### `yarn eject`
+7. Перейди в проект, выполнив команду:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+cd redux-saga-advanced
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+8. Теперь нужно установить зависимости проекта. В терминале, находясь в директории с текущим проектом, выполни команду:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+npm install
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+9. Чтобы запустить проект, выполни команду:
 
-## Learn More
+```bash
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+10. Перейди в браузер и открой страницу по адресу [http://localhost:3000](http://localhost:3000/). После загрузки сборки появится страница со стартовой точкой и сообщением «Добро пожаловать!»;
+11. Открой **`Chrome Dev Tools`** и перейди на вкладку **`console`**, там не должно быть каких-либо ошибок.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br>
 
-### Code Splitting
+### 🤔 FAQ
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Ответы на часто задаваемые вопросы можно найти [здесь](https://lab.lectrum.io/faq). <br>
 
-### Analyzing the Bundle Size
+### Лицензия
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+MIT © [Lectrum](https://lectrum.io)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div align="center">
+  <!-- Сделано с любовь -->
+    <img src="https://img.shields.io/badge/%D0%A1%D0%B4%D0%B5%D0%BB%D0%B0%D0%BD%D0%BE%20%D1%81-%F0%9F%96%A4-red.svg?longCache=true&style=for-the-badge&colorA=000&colorB=fedcba"
+      alt="Сделано с любовь" />
+</div>
